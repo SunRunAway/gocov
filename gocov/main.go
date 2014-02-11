@@ -25,9 +25,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/axw/gocov"
-	"github.com/axw/gocov/gocovutil"
-	"github.com/axw/gocov/parser"
+	"github.com/SunRunAway/gocov"
+	"github.com/SunRunAway/gocov/gocovutil"
+	"github.com/SunRunAway/gocov/parser"
 	"go/ast"
 	"go/build"
 	goparser "go/parser"
@@ -43,9 +43,9 @@ import (
 	"strings"
 )
 
-const gocovPackagePath = "github.com/axw/gocov"
-const instrumentedGocovPackagePath = "github.com/axw/gocov/instrumented"
-const unmanagedPackagePathRoot = "github.com/axw/gocov/unmanaged"
+const gocovPackagePath = "github.com/SunRunAway/gocov"
+const instrumentedGocovPackagePath = "github.com/SunRunAway/gocov/instrumented"
+const unmanagedPackagePathRoot = "github.com/SunRunAway/gocov/unmanaged"
 
 func usage() {
 	fmt.Fprintf(os.Stderr, "Usage:\n\n\tgocov command [arguments]\n\n")
@@ -264,7 +264,7 @@ func (in *instrumenter) abspkgpath(pkgpath string) (string, error) {
 		// a local import path.
 		err = errors.New(`
 Coverage testing of packages outside of GOPATH is not currently supported.
-See: https://github.com/axw/gocov/issues/30
+See: https://github.com/SunRunAway/gocov/issues/30
 `)
 		return "", err
 	}

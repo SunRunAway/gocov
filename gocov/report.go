@@ -23,7 +23,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/axw/gocov"
+	"github.com/SunRunAway/gocov"
 	"io"
 	"io/ioutil"
 	"os"

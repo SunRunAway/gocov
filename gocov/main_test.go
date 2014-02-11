@@ -26,7 +26,7 @@ import (
 	"testing"
 )
 
-const testdata = "github.com/axw/gocov/gocov/testdata"
+const testdata = "github.com/SunRunAway/gocov/gocov/testdata"
 
 func cloneFlagSet(f *flag.FlagSet) *flag.FlagSet {
 	clone := flag.NewFlagSet("", flag.ContinueOnError)

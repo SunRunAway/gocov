@@ -22,7 +22,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/axw/gocov"
+	"github.com/SunRunAway/gocov"
 	"go/ast"
 	"go/token"
 	"strconv"
